@@ -1,0 +1,67 @@
+body, h2, h3, h4, h5, h6, p{
+	font-family: $mainFontFamily;
+	font-weight: 300;
+	font-size:100%; //16px;
+	line-height:1.25;
+}
+
+h1, h4{
+	font-weight: 600;
+}
+
+header {
+	font-weight: 600;	
+}
+
+
+h1{
+	font-size: 1.750em; //28px
+}
+
+h2{
+	font-size: 1.500em; //24px
+}
+
+h3{
+	font-size: 1.500em; //24px
+}
+
+h4, h5, h6{
+	font-size: 1em; //16px
+}
+
+a{
+	text-decoration: none;
+	font-size: inherit;
+}
+header{
+	h2{
+		font-size: 1em;
+		font-weight: 600;
+	}
+}
+nav{
+	h4{
+		font-size: 1.500em; //24px
+		font-weight: 300;
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		ul{
+			li{
+				display: block;
+				font-size: 1em;
+				font-weight: 600;
+				text-overflow: ellipsis;
+				width: 100%;
+				overflow: hidden;
+				white-space: nowrap;
+				-webkit-text-overflow: ellipsis;
+				a{
+					color: $boldColor;
+				}
+			}
+		}
+	}
+}

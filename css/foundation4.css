@@ -2659,3 +2659,33 @@ textarea.error:focus {
 label.error {
   color: #c60f13;
 }
+
+/* Flex Video */
+/* line 44, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_flex-video.scss */
+.flex-video {
+  position: relative;
+  padding-top: 1.5625em;
+  padding-bottom: 67.5%;
+  height: 0;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+/* line 26, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_flex-video.scss */
+.flex-video.widescreen {
+  padding-bottom: 57.25%;
+}
+/* line 27, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_flex-video.scss */
+.flex-video.vimeo {
+  padding-top: 0;
+}
+/* line 32, ../../../../../../../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.3.1/scss/foundation/components/_flex-video.scss */
+.flex-video iframe,
+.flex-video object,
+.flex-video embed,
+.flex-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

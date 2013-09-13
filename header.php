@@ -35,3 +35,12 @@
 			</nav>
 		</div>
 		<div class="large-8 columns">
+			<section>
+			<?php if ( $wp_query->max_num_pages > 1 ) : ?>
+			  <div class="prev">
+			    <?php next_posts_link( __( '&larr; Older posts' ) ); ?>
+			  </div>
+			  <div class="next">
+			    <?php previous_posts_link( __( 'Newer posts &rarr;' ) ); ?>
+			  </div>
+			<?php endif; ?>
