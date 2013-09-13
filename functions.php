@@ -5,6 +5,9 @@ if ( function_exists( 'add_theme_support' ) ):
   add_theme_support( 'post-thumbnails' );
 endif;
 
+show_admin_bar(false);
+
+
 if ( function_exists('register_sidebars') ):
   register_sidebar(array(
     'name'=>'Sidebar',
@@ -21,6 +24,7 @@ function my_init_method() {
     wp_register_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js');
     wp_enqueue_script( 'jquery' );
   endif;
-}    
+}
+    
 add_action('init', 'my_init_method');
 ?>

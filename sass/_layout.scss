@@ -18,3 +18,44 @@ h1,h2,h3,h4,h5,h6{
 h1{
 	color: $accentColor;
 }
+
+.article-content{
+	padding: 0 3.750em 3.750em 3.750em;
+	margin: 0 0 3.750em 0;
+}
+
+a.logo{
+	position: absolute;
+	left: -60px;
+	width: 60px;
+	height: 60px;
+	display: block;
+}
+
+.search{
+	input{
+		font-size: 1.500em;
+		font-weight: 300;
+		background: none;
+		border: none;
+		@include box-shadow(none);
+		color: $mainColor;
+		-webkit-font-smoothing: antialiased;
+	}
+	input[type="text"]{
+		padding: 0;
+		width: 80%;
+		float: left;
+	}
+	input[type="submit"]{
+		width: 20%;
+		height: 2.3125em;
+		display: block;
+	}
+	input[type="text"]:focus{
+		padding: 0 0.5em;
+	}
+	form{
+		clear: both;
+	}
+}

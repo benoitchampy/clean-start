@@ -19,6 +19,10 @@
 	<div class="row">
 		<div class="large-4 columns">
 			<header>
+				<a href="<?php echo home_url( '/' ); ?>" class="logo" >
+				      <img class="logo" src="<?php bloginfo('template_directory');?>/imgs/bc-logo.png" width="60" height="60" alt="BC" />
+				   </object>
+				</a>
 				<h1>
 					<a href="<?php echo home_url( '/' ); ?>"><?php bloginfo('name'); ?></a>
 				</h1>
@@ -30,17 +34,9 @@
 				<?php get_sidebar(); ?>
 				<?php 
 				  // Uncomment to show menu
-				  // wp_nav_menu( array( 'menu' => 'Main' ) );
+				  //wp_nav_menu( array( 'menu' => 'Main', 'walker' => 'My_Walker' ) );
 				?>
 			</nav>
 		</div>
 		<div class="large-8 columns">
 			<section>
-			<?php if ( $wp_query->max_num_pages > 1 ) : ?>
-			  <div class="prev">
-			    <?php next_posts_link( __( '&larr; Older posts' ) ); ?>
-			  </div>
-			  <div class="next">
-			    <?php previous_posts_link( __( 'Newer posts &rarr;' ) ); ?>
-			  </div>
-			<?php endif; ?>

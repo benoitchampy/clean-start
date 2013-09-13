@@ -1,4 +1,4 @@
-<form method="get" action="<?php bloginfo('url'); ?>/">
-  <input name="s" type="text" />
-  <input type="submit" value="Search" />
+<form class="search" method="get" action="<?php bloginfo('url'); ?>/">
+  <input name="s" type="text" placeholder="Recherche" />
+  <input type="submit" value="OK" />
 </form>
