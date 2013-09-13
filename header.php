@@ -15,9 +15,11 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-<a href="<?php echo home_url( '/' ); ?>">Home Page</a>
-<?php 
-  // Uncomment to show menu
-  // wp_nav_menu( array( 'menu' => 'Main' ) );
-?>
+	<div class="row">
+		<div class="large-12">
+			<a href="<?php echo home_url( '/' ); ?>"><?php bloginfo('name'); ?></a>
+			<a href="<?php echo home_url( '/' ); ?>"><?php bloginfo('description'); ?></a>
+			<?php 
+			  // Uncomment to show menu
+			  // wp_nav_menu( array( 'menu' => 'Main' ) );
+			?>
