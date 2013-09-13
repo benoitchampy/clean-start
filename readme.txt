@@ -1,13 +1,20 @@
-Clean Start
+Clean Start With Foundation 4
 
 ---
 
 Minimal theme created as a starting point for custom theme development. Stripped down to the bare 
 minimum templates and markup for a functional theme.
 
+Clean Start Theme is forked from clean-start by ackmann-dickenson
+
+- Adding Foundation 4 Framework capabilities
+http://foundation.zurb.com/
+
+You will have to install Foundation via terminal explained here:
+http://foundation.zurb.com/docs/sass.html
+
+- sass support with compass
+http://sass-lang.com/
+http://compass-style.org/
+
 ---
-
-v1.1 01.31.2012
-Updated jQuery version
-
-v1.0 10.25.2011
