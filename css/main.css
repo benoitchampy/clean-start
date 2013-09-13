@@ -1,0 +1,60 @@
+/* line 1, ../sass/_global.scss */
+div {
+  position: relative;
+}
+
+/* line 5, ../sass/_global.scss */
+.clear {
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+}
+
+/* line 14, ../sass/_global.scss */
+.clearfix:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/* Hack for IE7 */
+/* line 23, ../sass/_global.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 24, ../sass/_global.scss */
+.clearfix {
+  display: block;
+}
+
+/* WordPress Presentational Classes*/
+/* line 27, ../sass/_global.scss */
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 28, ../sass/_global.scss */
+.alignleft {
+  float: left;
+}
+
+/* line 29, ../sass/_global.scss */
+.alignright {
+  float: right;
+}
+
+/* line 30, ../sass/_global.scss */
+.wp-caption {
+  border: 1px solid #666;
+  text-align: center;
+  background: #ccc;
+  padding: 10px;
+  margin: 10px;
+}
