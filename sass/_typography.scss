@@ -52,9 +52,28 @@ nav{
 		margin: 1em 0;
 		
 	}
-	ul{
+	.menu-item{
+		font-size: 1.500em; //24px
+		font-weight: 300;
+		margin: 1em 0;
+		line-height: 1.25;
+		box-sizing: border-box;
+		a{
+			display: block;
+			color: $lightColor;
+		}
+
+		&.current-menu-item a, &.current-post-ancestor a{
+			color: $boldColor;
+		}				
+	}
+
+	.menu-main_nav-container{
 		border-top: 1px solid $lightColor; 
 		border-bottom: 1px solid $lightColor;
+		
+	}
+	ul{
 
 		list-style: none;
 		padding: 0;

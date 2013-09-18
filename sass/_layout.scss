@@ -1,3 +1,6 @@
+html{
+	background: $backgroundColor;
+}
 body{
 	color: $mainColor;
 	background: $backgroundColor;
@@ -6,7 +9,11 @@ body{
 }
 
 section{
+}
+
+article{
 	background: white;
+	margin-bottom: 20px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -15,14 +22,23 @@ h1,h2,h3,h4,h5,h6{
 	}
 }
 
-h1{
-	color: $accentColor;
+h1, h1 a{
+	color: $strongColor !important;
 }
 
 .article-content{
-	padding: 0 3.750em 3.750em 3.750em;
+	padding: 3em 3.750em 3.750em 3.750em;
 	margin: 0 0 3.750em 0;
+	.article-title{
+		border-bottom: 1px solid #adadad;
+		margin-bottom: 1em;
+	}
+	h1{
+		margin-top: 0;
+	}
 }
+
+
 
 a.logo{
 	position: absolute;
@@ -30,6 +46,15 @@ a.logo{
 	width: 60px;
 	height: 60px;
 	display: block;
+}
+
+.fixed{
+}
+
+
+.sticky{
+    position:fixed;
+    z-index:999;
 }
 
 .search{
@@ -58,4 +83,8 @@ a.logo{
 	form{
 		clear: both;
 	}
+}
+
+section a{
+	color: $accentColor;
 }

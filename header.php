@@ -17,11 +17,17 @@
 
 <body <?php body_class(); ?>>
 	<div class="row">
-		<div class="large-4 columns">
+		<div class="large-3 small-3 columns">
+			<div>
 			<header>
+
+				<div class="show-for-small ">
+				      <img class="logo" src="<?php bloginfo('template_directory');?>/imgs/bc-logo.png" width="60" height="60" alt="BC" />
+				</div>
+
+
 				<a href="<?php echo home_url( '/' ); ?>" class="logo" >
 				      <img class="logo" src="<?php bloginfo('template_directory');?>/imgs/bc-logo.png" width="60" height="60" alt="BC" />
-				   </object>
 				</a>
 				<h1>
 					<a href="<?php echo home_url( '/' ); ?>"><?php bloginfo('name'); ?></a>
@@ -31,12 +37,14 @@
 				</h2>
 			</header>
 			<nav>
-				<?php get_sidebar(); ?>
+				
 				<?php 
 				  // Uncomment to show menu
-				  //wp_nav_menu( array( 'menu' => 'Main', 'walker' => 'My_Walker' ) );
+				  wp_nav_menu( array( 'menu' => 'Main' ) );
 				?>
+				<?php get_sidebar(); ?>
 			</nav>
+			</div>
 		</div>
-		<div class="large-8 columns">
+		<div class="large-9 small-9 columns">
 			<section>
