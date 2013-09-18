@@ -149,20 +149,24 @@ h1, h1 a {
 
 /* line 43, ../sass/_layout.scss */
 a.logo {
-  position: absolute;
-  left: -60px;
+  margin-top: 0.45em;
   width: 60px;
   height: 60px;
   display: block;
 }
 
-/* line 55, ../sass/_layout.scss */
+/* line 50, ../sass/_layout.scss */
+.fixed {
+  position: fixed;
+}
+
+/* line 56, ../sass/_layout.scss */
 .sticky {
   position: fixed;
   z-index: 999;
 }
 
-/* line 61, ../sass/_layout.scss */
+/* line 62, ../sass/_layout.scss */
 .search input {
   font-size: 1.500em;
   font-weight: 300;
@@ -174,28 +178,28 @@ a.logo {
   color: #979797;
   -webkit-font-smoothing: antialiased;
 }
-/* line 70, ../sass/_layout.scss */
+/* line 71, ../sass/_layout.scss */
 .search input[type="text"] {
   padding: 0;
   width: 80%;
   float: left;
 }
-/* line 75, ../sass/_layout.scss */
+/* line 76, ../sass/_layout.scss */
 .search input[type="submit"] {
   width: 20%;
   height: 2.3125em;
   display: block;
 }
-/* line 80, ../sass/_layout.scss */
+/* line 81, ../sass/_layout.scss */
 .search input[type="text"]:focus {
   padding: 0 0.5em;
 }
-/* line 83, ../sass/_layout.scss */
+/* line 84, ../sass/_layout.scss */
 .search form {
   clear: both;
 }
 
-/* line 88, ../sass/_layout.scss */
+/* line 89, ../sass/_layout.scss */
 section a {
   color: #00b2ff;
 }

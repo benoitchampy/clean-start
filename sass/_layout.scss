@@ -41,14 +41,15 @@ h1, h1 a{
 
 
 a.logo{
-	position: absolute;
-	left: -60px;
+	margin-top: 0.45em;
 	width: 60px;
 	height: 60px;
 	display: block;
 }
 
 .fixed{
+    position:fixed;
+
 }
 
 
